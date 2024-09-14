@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "i-a-company"
+version = "1.0.0"
+description = "ia para responder perguntas estatisticas de sua empresa"
+authors = ["Bruno Lima <bruno.lima80@fatec.sp.gov.br>"]
+readme = "README.md"
+packages = [{include = "i"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+numpy = "^2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

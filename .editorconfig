@@ -1,0 +1,33 @@
+# EditorConfig: https://editorconfig.org
+
+# Arquivo EditorConfig mais alto na hierarquia
+root = true
+
+# Quebras de linha no estilo Unix com uma quebra de linha no final de cada arquivo
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Correspondência de múltiplos arquivos com notação de expansão de chaves
+# Define o charset padrão
+[*.{js,py}]
+charset = utf-8
+
+# Indentação de 4 espaços
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Indentação com tabulação (sem tamanho especificado)
+[Makefile]
+indent_style = tab
+
+# Sobrescreve a indentação para todos os arquivos JS no diretório lib
+[lib/**.js]
+indent_style = space
+indent_size = 2
+
+# Correspondência exata dos arquivos package.json ou .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
